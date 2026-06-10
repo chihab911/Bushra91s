@@ -1,0 +1,327 @@
+/* إعدادات عامة */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#07020f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* الخلفية */
+
+.aurora-bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:radial-gradient(circle,#7b2cbf,#240046,#000);
+    opacity:.35;
+    z-index:-2;
+}
+
+/* شاشة البداية */
+
+#intro-overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:#05010a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.intro-content{
+    text-align:center;
+}
+
+.intro-text{
+    font-size:45px;
+    color:#ff69b4;
+    margin-bottom:20px;
+    font-family:'Cinzel',serif;
+}
+
+.subtitle{
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+/* الزر */
+
+.luxury-btn{
+    background:linear-gradient(45deg,#ff4da6,#b5179e);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.luxury-btn:hover{
+    transform:scale(1.05);
+}
+
+/* المحتوى */
+
+.fade-in-hidden{
+    display:none;
+}
+
+.parallax-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+/* الكروت */
+
+.glass-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    padding:40px;
+    border-radius:25px;
+    width:90%;
+    max-width:700px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 0 25px rgba(255,105,180,.2);
+}
+
+/* العنوان */
+
+.neon-title{
+    font-size:65px;
+    color:white;
+    text-shadow:
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ff1493;
+    margin-bottom:20px;
+}
+
+/* العد التنازلي */
+
+.countdown-circle{
+    margin:auto;
+    width:140px;
+    height:140px;
+    position:relative;
+}
+
+.countdown-circle svg{
+    width:140px;
+    height:140px;
+    transform:rotate(-90deg);
+}
+
+.countdown-circle circle{
+    fill:none;
+    stroke:#333;
+    stroke-width:8;
+}
+
+#progress-circle{
+    stroke:#ff69b4;
+}
+
+.countdown-number{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:40px;
+}
+
+/* الكعكة */
+
+.cake{
+    width:200px;
+    margin:auto;
+    position:relative;
+    margin-top:40px;
+}
+
+.layer{
+    border-radius:10px;
+}
+
+.layer-bottom{
+    height:60px;
+    background:#d63384;
+}
+
+.layer-middle{
+    height:50px;
+    width:160px;
+    margin:auto;
+    background:#e056b5;
+}
+
+.layer-top{
+    height:40px;
+    width:120px;
+    margin:auto;
+    background:#ffb3d9;
+}
+
+/* الشموع */
+
+.candles-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:15px;
+}
+
+.candle{
+    width:8px;
+    height:35px;
+    background:#fff;
+    position:relative;
+}
+
+.flame{
+    width:14px;
+    height:20px;
+    background:orange;
+    border-radius:50%;
+    position:absolute;
+    top:-18px;
+    left:-3px;
+    box-shadow:0 0 15px orange;
+}
+
+.candle.blown .flame{
+    display:none;
+}
+
+/* صندوق الهدية */
+
+.gift-box-3d{
+    width:120px;
+    height:120px;
+    margin:auto;
+    position:relative;
+    cursor:pointer;
+}
+
+.box-body{
+    width:120px;
+    height:80px;
+    background:#d63384;
+    position:absolute;
+    bottom:0;
+}
+
+.box-lid{
+    width:130px;
+    height:30px;
+    background:#ff69b4;
+    position:absolute;
+    left:-5px;
+    top:0;
+    transition:.5s;
+}
+
+.gift-box-3d.open .box-lid{
+    transform:translateY(-30px) rotate(-15deg);
+}
+
+/* الظرف */
+
+.envelope-wrapper{
+    margin:auto;
+    width:220px;
+    cursor:pointer;
+}
+
+.envelope{
+    background:#43235f;
+    padding:20px;
+    border-radius:10px;
+}
+
+.letter{
+    background:white;
+    color:black;
+    padding:15px;
+    border-radius:8px;
+}
+
+.letter-text{
+    white-space:pre-line;
+    font-size:15px;
+}
+
+/* الكتاب */
+
+.book{
+    margin-top:25px;
+}
+
+.page{
+    background:#2d1242;
+    padding:25px;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+/* النهاية */
+
+#final-celebration{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grand-title{
+    font-size:55px;
+    text-align:center;
+    color:#ff69b4;
+    text-shadow:0 0 20px #ff1493;
+}
+
+/* زر الرجوع */
+
+#backToTop{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    border:none;
+}
+
+/* الهاتف */
+
+@media(max-width:768px){
+
+.neon-title{
+    font-size:42px;
+}
+
+.intro-text{
+    font-size:30px;
+}
+
+.grand-title{
+    font-size:35px;
+}
+
+.glass-card{
+    padding:25px;
+}
+
+}
