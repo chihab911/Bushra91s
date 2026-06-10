@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bushra ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- الخلفية -->
+    <canvas id="globalCanvas"></canvas>
+
+    <!-- شاشة البداية -->
+    <div id="intro-overlay">
+
+        <div class="curtain left-curtain"></div>
+        <div class="curtain right-curtain"></div>
+
+        <div class="intro-content">
+
+            <h1 class="intro-text">
+                🎉 Happy Birthday Bushra 🎉
+            </h1>
+
+            <p class="subtitle">
+                A small surprise made especially for you ❤️
+            </p>
+
+            <button id="start-btn" class="luxury-btn">
+                Start
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <main id="main-content" class="fade-in-hidden">
+
+        <div class="aurora-bg"></div>
+
+        <!-- القسم الأول -->
+        <section class="parallax-section">
+
+            <div class="glass-card">
+
+                <h1 class="neon-title">
+                    Bushra
+                </h1>
+
+                <p class="subtitle">
+                    Today is your special day ✨
+                </p>
+
+                <div class="countdown-container">
+
+                    <div class="countdown-circle">
+
+                        <svg>
+                            <circle cx="70" cy="70" r="60"></circle>
+                            <circle cx="70" cy="70" r="60" id="progress-circle"></circle>
+                        </svg>
+
+                        <div class="countdown-number" id="countdown-seconds">
+                            5
+                        </div>
+
+                    </div>
+
+                    <span class="countdown-label">
+                        The surprise is coming...
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- الكعكة -->
+        <section class="parallax-section">
+
+            <div class="glass-card">
+
+                <h2>🎂 Make a Wish</h2>
+
+                <p class="instruction">
+                    Tap the candles to blow them out
+                </p>
+
+                <div class="cake">
+
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+
+                    <div class="candles-container">
+
+                        <div class="candle" onclick="blowCandle(this)">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle" onclick="blowCandle(this)">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle" onclick="blowCandle(this)">
+                            <div class="flame"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- صندوق الهدية -->
+        <section class="parallax-section">
+
+            <div class="glass-card">
+
+                <h2>🎁 Your Gift</h2>
+
+                <div class="gift-box-3d" id="giftBox" onclick="openGift()">
+
+                    <div class="box-lid"></div>
+
+                    <div class="box-body"></div>
+
+                </div>
+
+                <p class="tap-hint">
+                    Tap to open
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- الرسالة -->
+        <section class="parallax-section">
+
+            <div class="glass-card">
+
+                <h2>💌 Birthday Letter</h2>
+
+                <div class="envelope-wrapper" id="envelope" onclick="openEnvelope()">
+
+                    <div class="envelope">
+
+                        <div class="flap"></div>
+
+                        <div class="pocket"></div>
+
+                        <div class="letter">
+
+                            <div class="letter-text" id="typewriter-text">
+
+Happy Birthday Bushra ❤️
+
+May this year bring you happiness,
+beautiful memories,
+success,
+and endless smiles.
+
+Keep shining like the brightest star.
+
+🎉✨🌸
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- الكتاب -->
+        <section class="parallax-section">
+
+            <div class="glass-card">
+
+                <h2>📖 Your Story</h2>
+
+                <div class="book">
+
+                    <div class="page">
+
+                        <div class="page-front">
+
+                            <h3>Chapter 1</h3>
+
+                            <p>
+                                Every birthday is a new beginning.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="page">
+
+                        <div class="page-front">
+
+                            <h3>Chapter 2</h3>
+
+                            <p>
+                                May all your dreams become reality.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- النهاية -->
+        <section id="final-celebration">
+
+            <h1 class="grand-title" id="grandTitle">
+
+                🎉 Happy Birthday Bushra ❤️ 🎉
+
+            </h1>
+
+        </section>
+
+        <button id="backToTop" class="luxury-btn">
+
+            ↑
+
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
